@@ -184,7 +184,7 @@ function Hero(mod){
   console.log(archer.language); // Elvish
  archer.greet(); // Lilith offers a greeting in Elvish.
  mage.takeDamage(); // Bruce took damage.
-swordsman.destroy(); // Sir Mustachio was removed from the game.
-paul.charmingEyes(); // ${this.name} stares deeply into your eyes, you feel feverish and overwhelmed, weakened.
-eric.poisonDagger(); // ${this.name} throws a deadly poisoned dagger! Damage for 10 health points.
-paul.destroy(); // Super Paul was removed from game.
+ swordsman.destroy(); // Sir Mustachio was removed from the game.
+ paul.charmingEyes(); // ${this.name} stares deeply into your eyes, you feel feverish and overwhelmed, weakened.
+ eric.poisonDagger(); // ${this.name} throws a deadly poisoned dagger! Damage for 10 health points.
+ paul.destroy(); // Super Paul was removed from game.
