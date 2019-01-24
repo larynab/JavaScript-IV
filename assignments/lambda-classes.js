@@ -49,10 +49,10 @@ class ProjectManagers extends Instructor {
         this.gradClassName = pmAttributes.gradClassName;
         this.favInstructor = pmAttributes.favInstructor;
     };
-    standUp(channel) {
+    standUp(pm, channel) {
         console.log(`${pm.name} announces to ${channel}, @channel standy times!​​​​​`);
     };
-    debugsCode(student, subject) {
+    debugsCode(pm, student, subject) {
         console.log(`${pm.name} debugs ${student.name}'s code on ${subject}.`);
     };
 
@@ -96,10 +96,41 @@ const beatrix = new Student({
     className: 'KIN77',
 });
 
+//Project Managers
+const jimbo = new ProjectManagers({
+    name: 'Yojimbo',
+    location: 'Vzraq',
+    age: 100,
+    gender: 'male',
+    gradClassName: 'TNT99',
+    favInstructor: 'Gandalf The White',
+    favLanguage: 'Watermelon',
+    specialty: 'Samurai Code',
+    catchPhrase: 'one shot one kill',
+
+});
+const vim = new ProjectManagers({
+    name: 'Vimuntriza',
+    location: 'Renjikal',
+    age: 150,
+    gender: 'female',
+    gradClassName: 'XUR66',
+    favInstructor: 'Optimus Prime',
+    favLanguage: 'Xurxi',
+    specialty: 'Dark Magic',
+    catchPhrase: 'build it break it'
+});
+
 //commands
 console.log(fred);
+console.log(kyle);
 fred.demo('JSIV');
 kyle.grade(phil, 'Fusion');
 console.log(phil);
+console.log(beatrix);
 phil.listsSubjects(phil, ['Alchemy', 'Herbalism']);
 beatrix.sprintChallenge(beatrix, 'KIN77');
+jimbo.standUp(jimbo, 'KIN77');
+console.log(vim);
+console.log(jimbo);
+vim.debugsCode(vim, beatrix, 'Conjouring');
